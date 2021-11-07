@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="@string/sign">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:title="@string/menu_login" />
+        </menu>
+    </item>
+    <item android:title="@string/menu">
+        <menu>
+            <item
+                android:id="@+id/nav_publikasi"
+                android:title="@string/menu_publikasi" />
+            <item
+                android:id="@+id/nav_topik"
+                android:title="@string/menu_topik" />
+            <item
+                android:id="@+id/nav_infografis"
+                android:title="@string/menu_infografis" />
+            <item
+                android:id="@+id/nav_visualisasi"
+                android:title="@string/menu_visualisasi" />
+            <item
+                android:id="@+id/nav_dataset"
+                android:title="@string/menu_dataset" />
+        </menu>
+    </item>
+    <item android:title="@string/menu_topik">
+        <menu>
+            <item
+                android:id="@+id/nav_kr"
+                android:title="@string/menu_kr" />
+            <item
+                android:id="@+id/nav_pk"
+                android:title="@string/menu_pk" />
+            <item
+                android:id="@+id/nav_ip"
+                android:title="@string/menu_ip" />
+            <item
+                android:id="@+id/nav_ek"
+                android:title="@string/menu_ek" />
+        </menu>
+    </item>
+</menu>

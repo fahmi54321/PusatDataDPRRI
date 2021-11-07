@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Pusat Data DPR RI"

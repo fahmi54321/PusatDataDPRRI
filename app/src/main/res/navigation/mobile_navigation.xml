@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.android.pusatdatadprri.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_publikasi"
+        android:name="com.android.pusatdatadprri.ui.menu.PublikasiFragment"
+        android:label="Publikasi"
+        tools:layout="@layout/fragment_publikasi" />
+
+    <fragment
+        android:id="@+id/nav_topik"
+        android:name="com.android.pusatdatadprri.ui.gallery.GalleryFragment"
+        android:label="Topik"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_infografis"
+        android:name="com.android.pusatdatadprri.ui.menu.InfografisFragment"
+        android:label="Infografis"
+        tools:layout="@layout/fragment_infografis" />
+    <fragment
+        android:id="@+id/nav_visualisasi"
+        android:name="com.android.pusatdatadprri.ui.menu.VisualisasiFragment"
+        android:label="Visualisasi"
+        tools:layout="@layout/fragment_visualisasi" />
+    <fragment
+        android:id="@+id/nav_dataset"
+        android:name="com.android.pusatdatadprri.ui.menu.DataSetFragment"
+        android:label="Request Dataset"
+        tools:layout="@layout/fragment_data_set" />
+    <fragment
+        android:id="@+id/nav_kr"
+        android:name="com.android.pusatdatadprri.ui.topik.KesejahteraanRakyatFragment"
+        android:label="Kesejahteraan Rakyat"
+        tools:layout="@layout/fragment_kesejahteraan_rakyat" />
+    <fragment
+        android:id="@+id/nav_pk"
+        android:name="com.android.pusatdatadprri.ui.topik.PolitikKeamananFragment"
+        android:label="Politik dan Keamanan"
+        tools:layout="@layout/fragment_politik_keamanan" />
+    <fragment
+        android:id="@+id/nav_ip"
+        android:name="com.android.pusatdatadprri.ui.topik.IndustriPembangunanFragment"
+        android:label="Industri dan Pembangunan"
+        tools:layout="@layout/fragment_industri_pembangunan" />
+    <fragment
+        android:id="@+id/nav_ek"
+        android:name="com.android.pusatdatadprri.ui.topik.EkonomiKeuanganFragment"
+        android:label="Ekonomi dan Keuangan"
+        tools:layout="@layout/fragment_ekonomi_keuangan" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.android.pusatdatadprri.ui.sign.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+</navigation>
