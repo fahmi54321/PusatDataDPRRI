@@ -34,4 +34,5 @@
     <string name="keterangan">Single IdeNTIty Network loGin © Sekretariat Jenderal DPR RI Bidang Data dan Teknologi Informasi (BDTI)2019</string>
     <string name="pengguna">Pengguna</string>
     <string name="password">Password</string>
+    <string name="title_profile">Profile</string>
 </resources>
