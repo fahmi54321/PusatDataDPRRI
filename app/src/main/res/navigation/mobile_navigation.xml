@@ -63,4 +63,14 @@
         android:name="com.android.pusatdatadprri.ui.sign.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.android.pusatdatadprri.ui.notifications.NotificationsFragment"
+        android:label="Notifikasi"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.android.pusatdatadprri.ui.sign.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
 </navigation>

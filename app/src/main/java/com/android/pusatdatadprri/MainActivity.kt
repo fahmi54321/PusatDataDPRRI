@@ -45,8 +45,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_pk,
                 R.id.nav_ip,
                 R.id.nav_ek,
-                R.id.navigation_home,
-                R.id.navigation_dashboard,
+                R.id.navigation_login,
                 R.id.navigation_notifications
             ), drawerLayout
         )

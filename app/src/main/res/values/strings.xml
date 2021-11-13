@@ -35,4 +35,31 @@
     <string name="pengguna">Pengguna</string>
     <string name="password">Password</string>
     <string name="title_profile">Profile</string>
+    <string name="selamat_datang_di_pusat_data_dpr_ri">Selamat datang di Pusat Data DPR RI</string>
+    <string name="data_mutakhir_dan_terintegrasi_parlemen">Data Mutakhir dan Terintegrasi Parlemen</string>
+    <string name="cari_kata_kunci">Cari kata kunci...</string>
+    <string name="kesejahteraan_rakyat">Kesejahteraan Rakyat</string>
+
+    <string-array name="nama_kategori">
+        <item>Kesejahteraan Rakyat</item>
+        <item>Politik dan Keamanan</item>
+        <item>Industri dan Pembangunan</item>
+        <item>Ekonomi dan Keuangan</item>
+    </string-array>
+
+    <array name="gambar_kategori">
+        <item>@drawable/kr</item>
+        <item>@drawable/pk</item>
+        <item>@drawable/ip</item>
+        <item>@drawable/ek</item>
+    </array>
+
+    <string-array name="id_news">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <array name="gambar_news">
+        <item>@drawable/news1</item>
+        <item>@drawable/news2</item>
+    </array>
 </resources>
