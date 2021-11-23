@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home,
-                R.id.nav_login,
                 R.id.nav_publikasi,
                 R.id.nav_topik,
                 R.id.nav_infografis,
@@ -45,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_pk,
                 R.id.nav_ip,
                 R.id.nav_ek,
-                R.id.navigation_login,
+                R.id.nav_login_home,
                 R.id.navigation_notifications
             ), drawerLayout
         )

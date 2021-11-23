@@ -39,6 +39,14 @@
     <string name="data_mutakhir_dan_terintegrasi_parlemen">Data Mutakhir dan Terintegrasi Parlemen</string>
     <string name="cari_kata_kunci">Cari kata kunci...</string>
     <string name="kesejahteraan_rakyat">Kesejahteraan Rakyat</string>
+    <string name="selamat_datang">Selamat Datang di Pusat Data DPR RI Data Mutakhir dan Terintegrasi Parlemen</string>
+    <string name="apakah_anda_memiliki_akun_login_disini">Apakah anda memiliki akun? Login disini</string>
+    <string name="tidak_memiliki_akun_atau_akses_menuju_ke_beranda">Tidak memiliki akun atau akses? Menuju ke beranda</string>
+    <string name="menuju_ke_beranda">Menuju ke beranda</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="hari">Hari</string>
+    <string name="tanggal">Tanggal</string>
 
     <string-array name="nama_kategori">
         <item>Kesejahteraan Rakyat</item>
@@ -62,4 +70,29 @@
         <item>@drawable/news1</item>
         <item>@drawable/news2</item>
     </array>
+
+    <string-array name="item_title_notifikasi">
+        <item>Permintaan dataset sudah diterima</item>
+        <item>Permintaan data sudah dikirim</item>
+    </string-array>
+    <string-array name="item_content_notifikasi">
+        <item>Selamat siang, Yoga! Permintaan dataset yang anda kirim ...</item>
+        <item>Selamat siang, Yoga! Permintaan dataset yang anda kirim ...</item>
+    </string-array>
+    <string-array name="item_hari_notifikasi">
+        <item>Senin</item>
+        <item>Selasa</item>
+    </string-array>
+    <string-array name="item_tanggal_notifikasi">
+        <item>30 November 2021</item>
+        <item>31 November 2021</item>
+    </string-array>
+    <string-array name="item_content_long_notifikasi">
+        <item>Sudah kami terima dan sudah bisa anda akses pada link yang sudah kami kirim melalui e-mail yang sudah anda input pada form request data. Sila di cek terlebih dahulu, apabila tidak terdapat pada inbox, maka bisa di cek pada junk, atau archive. </item>
+        <item>Sudah kami terima dan sudah bisa anda akses pada link yang sudah kami kirim melalui e-mail yang sudah anda input pada form request data. Sila di cek terlebih dahulu, apabila tidak terdapat pada inbox, maka bisa di cek pada junk, atau archive. </item>
+    </string-array>
+    <string-array name="item_content_penutup_notifikasi">
+        <item>Gunakan data yang kami berikan sesuai dengan tujuan dan dengan bijaksana. Terima kasih.</item>
+        <item>Gunakan data yang kami berikan sesuai dengan tujuan dan dengan bijaksana. Terima kasih.</item>
+    </string-array>
 </resources>

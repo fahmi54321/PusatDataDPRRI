@@ -21,7 +21,9 @@
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_infografis.xml" value="0.1" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_kesejahteraan_rakyat.xml" value="0.1" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_login.xml" value="0.1" />
-        <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_notifications.xml" value="0.18" />
+        <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_login_home.xml" value="0.25" />
+        <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_notifications.xml" value="0.16" />
+        <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_notifikasi_content.xml" value="0.14" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_politik_keamanan.xml" value="0.1" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_publikasi.xml" value="0.1" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
@@ -29,6 +31,7 @@
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/item_date.xml" value="0.1" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/item_kategori.xml" value="0.22" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/item_news.xml" value="0.5" />
+        <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/item_notifikasi.xml" value="0.21" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/menu/activity_main_drawer.xml" value="0.20102564102564102" />
         <entry key="..\:/Manajemen_Informatika_18/Semester 6/Dicoding/Projek Fudemental/PusatDataDPRRI/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16574074074074074" />
