@@ -15,4 +15,5 @@
     <color name="date_true">#2c2e31</color>
     <color name="date_false">#c6c9cf</color>
     <color name="colorGrey">#B2A9A9</color>
+    <color name="colorGreyTranstparent">#C1CCCCCC</color>
 </resources>

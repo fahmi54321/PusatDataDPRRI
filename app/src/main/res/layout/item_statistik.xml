@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_marginBottom="28dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bigdata"
+        android:id="@+id/imgStatistik"
+        android:scaleType="centerCrop"></ImageView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreyTranstparent"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtTotalStatistik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.000"
+            android:padding="4dp"
+            style="@style/TextView.robotoBoldBlack_18sp"/>
+
+        <TextView
+            android:id="@+id/txtNamaStatistik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total publikasi"
+            android:padding="4dp"
+            style="@style/TextView.robotoRegulerBlack_14sp"/>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat selengkapnya"
+            android:padding="4dp"
+            android:drawableEnd="@drawable/ic_arrow_forward_black"
+            style="@style/TextView.robotoRegulerBlack_14sp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

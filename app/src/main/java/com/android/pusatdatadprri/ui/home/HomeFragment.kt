@@ -16,8 +16,10 @@ import com.android.pusatdatadprri.R
 import com.android.pusatdatadprri.databinding.FragmentHomeBinding
 import com.android.pusatdatadprri.model.kategori.KategoriModel
 import com.android.pusatdatadprri.model.news.NewsModel
+import com.android.pusatdatadprri.model.statistik.StatistikModel
 import com.android.pusatdatadprri.ui.adapter.KategoriAdapter
 import com.android.pusatdatadprri.ui.adapter.NewsAdapter
+import com.android.pusatdatadprri.ui.adapter.StatistikAdapter
 import com.android.pusatdatadprri.ui.home.adapter.CalendarAdapter
 import com.android.pusatdatadprri.ui.home.model.CalendarModel
 import com.github.dewinjm.monthyearpicker.MonthYearPickerDialogFragment
@@ -40,6 +42,14 @@ class HomeFragment : Fragment() {
     lateinit var gambarNews: TypedArray
     lateinit var idNews:Array<String>
     var news = arrayListOf<NewsModel>()
+
+    //statistik
+    private var adapterStatistik: StatistikAdapter?=null
+    lateinit var idStatistik : Array<String>
+    lateinit var namaStatistik : Array<String>
+    lateinit var gambarStatistik : TypedArray
+    lateinit var totalStatistik : Array<String>
+    private var statistik = arrayListOf<StatistikModel>()
 
     //calender
     private val DAYS_COUNT = 42
@@ -64,10 +74,12 @@ class HomeFragment : Fragment() {
         //isi data
         isiDataKategori()
         isiDataNews()
+        isiDataStatistik()
 
         //bindData
         bindDataKategori()
         bindDataNews()
+        bindDataStatistik()
 
         loadCalendar()
         aksiTombol()
@@ -100,6 +112,23 @@ class HomeFragment : Fragment() {
         adapterNews?.data = news
     }
 
+    private fun isiDataStatistik(){
+        gambarStatistik = resources.obtainTypedArray(R.array.gambar_statistik)
+        namaStatistik = resources.getStringArray(R.array.nama_statistik)
+        totalStatistik = resources.getStringArray(R.array.total_statistik)
+        idStatistik = resources.getStringArray(R.array.id_statistik)
+        for(position in idStatistik.indices){
+            val data = StatistikModel(
+                totalStatistik[position],
+                namaStatistik[position],
+                gambarStatistik.getResourceId(position,-1)
+            )
+            statistik.add(data)
+        }
+
+        adapterStatistik?.data = statistik
+    }
+
     private fun bindDataKategori() {
         adapterKategori = KategoriAdapter(kategori)
         binding.rvKategori.apply {
@@ -109,11 +138,21 @@ class HomeFragment : Fragment() {
     }
     private fun bindDataNews() {
         adapterNews = NewsAdapter(news)
+        binding.rvNews.apply {
+            layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
+            adapter = adapterNews
+        }
+    }
+
+    private fun bindDataStatistik(){
+
         var gridLayoutManager: GridLayoutManager? = null
         gridLayoutManager = GridLayoutManager(context, 2, LinearLayoutManager.VERTICAL, false)
-        binding.rvNews.apply {
+
+        adapterStatistik = StatistikAdapter(statistik)
+        binding.rvStatistik.apply {
             layoutManager = gridLayoutManager
-            adapter = adapterNews
+            adapter = adapterStatistik
         }
     }
 
