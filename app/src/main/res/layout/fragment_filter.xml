@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="16dp"
+    tools:context=".ui.menu.filter.FilterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView19"
+            style="@style/TextView.robotoBoldBlack_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/filter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_btn_primary_warna_kulit_4">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cari_berdasarkan_tag"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    style="@style/EditText.key2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edt_search_grey"
+                    android:hint="@string/cari_tag"
+                    android:inputType="textPersonName" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@color/warnaKulit1"
+                    android:src="@drawable/ic_search_key_black"></ImageButton>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_primary_warna_kulit_4"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jenis_informasi"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/naskah_akademik"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rancangan_undang_undang"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jurnal_prodigy"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/proceeding"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pedoman_kerja"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buku"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kajian_dan_evaluasi_pemantauan_pelaksanaan_undang_undang"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rekapitulasi_peraturan_pelaksanaan_undang_undang_gabungan"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rekapitulasi_peraturan_pelaksanaan_undang_undang"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rekapitulasi_uu_berdasarkan_tahun"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rekapitulasi_uu_dan_perlak_pada_komisi_komisi_dan_badan_anggaran_dpr_ri"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_primary_warna_kulit_4"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/topik_informasi"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/politik_dan_keamanan"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/industri_dan_pembangunan"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jurnal_prodigy"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kesejahteraan_rakyat"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ekonomi_dan_keuangan"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_primary_warna_kulit_4"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/topik_informasi" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2015"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2016"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2018"
+                style="@style/TextView.robotoRegulerBlack_10sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

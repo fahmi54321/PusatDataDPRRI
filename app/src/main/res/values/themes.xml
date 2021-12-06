@@ -43,6 +43,11 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/warnaKulit1</item>
     </style>
+    <style name="TextView.robotoBoldWarnakulit3_10sp">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/warnaKulit3</item>
+    </style>
     <style name="TextView.robotoBoldBlack_14sp">
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="android:textSize">14sp</item>
@@ -78,10 +83,27 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
+    <style name="TextView.robotoBoldWarnakulit3_14sp">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/warnaKulit3</item>
+    </style>
     <style name="TextView.robotoRegulerBlack_9sp">
         <item name="fontFamily">@font/roboto_regular</item>
         <item name="android:textSize">9sp</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.robotoRegulerBlack_10sp">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.robotoRegulerWarnakulit3_10sp">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/warnaKulit3</item>
     </style>
     <style name="TextView.robotoRegulerOrange_14sp">
         <item name="fontFamily">@font/roboto_regular</item>
@@ -107,6 +129,12 @@
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="textAllCaps">false</item>
     </style>
+    <style name="Button.primary_circle_white_10sp">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#A0522D</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="textAllCaps">false</item>
+    </style>
     <style name="EditText.primary">
         <item name="fontFamily">@font/roboto_light</item>
         <item name="android:textStyle">italic</item>
@@ -122,6 +150,15 @@
         <item name="android:textSize">9sp</item>
         <item name="android:padding">4dp</item>
         <item name="android:drawableLeft">@drawable/ic_search_key</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+    <style name="EditText.key2">
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#9F9E97</item>
+        <item name="android:textColorHint">#9F9E97</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:padding">4dp</item>
         <item name="android:drawablePadding">8dp</item>
     </style>
 

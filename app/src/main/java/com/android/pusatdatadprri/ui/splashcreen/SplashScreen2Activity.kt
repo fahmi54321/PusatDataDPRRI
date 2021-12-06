@@ -6,20 +6,15 @@ import android.os.Bundle
 import android.os.Handler
 import com.android.pusatdatadprri.MainActivity
 import com.android.pusatdatadprri.R
-import com.android.pusatdatadprri.databinding.ActivitySplashScreenBinding
 
-class SplashScreenActivity : AppCompatActivity() {
-
-    lateinit var binding : ActivitySplashScreenBinding
-
+class SplashScreen2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_splash_screen2)
 
         val handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this, SplashScreen2Activity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
 

@@ -38,7 +38,6 @@
     <string name="selamat_datang_di_pusat_data_dpr_ri">Selamat datang di Pusat Data DPR RI</string>
     <string name="data_mutakhir_dan_terintegrasi_parlemen">Data Mutakhir dan Terintegrasi Parlemen</string>
     <string name="cari_kata_kunci">Cari kata kunci...</string>
-    <string name="kesejahteraan_rakyat">Kesejahteraan Rakyat</string>
     <string name="selamat_datang">Selamat Datang di Pusat Data DPR RI Data Mutakhir dan Terintegrasi Parlemen</string>
     <string name="apakah_anda_memiliki_akun_login_disini">Apakah anda memiliki akun? Login disini</string>
     <string name="tidak_memiliki_akun_atau_akses_menuju_ke_beranda">Tidak memiliki akun atau akses? Menuju ke beranda</string>
@@ -47,6 +46,29 @@
     <string name="content">Content</string>
     <string name="hari">Hari</string>
     <string name="tanggal">Tanggal</string>
+    <string name="cari_data_set">Cari dataset...</string>
+    <string name="rekapitulasi_peraturan_pelaksanaan_undang_undang_gabungan">Rekapitulasi Peraturan Pelaksanaan Undang-Undang Gabungan</string>
+    <string name="pratinjau">Pratinjau</string>
+    <string name="pusat_pemantauan_pelaksanaan_undang_undang">PUSAT PEMANTAUAN PELAKSANAAN UNDANG-UNDANG</string>
+    <string name="filter">Filter</string>
+    <string name="cari_berdasarkan_tag">Cari Berdasarkan Tag</string>
+    <string name="jenis_informasi">Jenis Informasi</string>
+    <string name="cari_tag">Cari tag</string>
+    <string name="naskah_akademik">Naskah Akademik</string>
+    <string name="rancangan_undang_undang">Rancangan Undang-Undang</string>
+    <string name="proceeding">Proceeding</string>
+    <string name="pedoman_kerja">Pedoman Kerja</string>
+    <string name="buku">Buku</string>
+    <string name="kajian_dan_evaluasi_pemantauan_pelaksanaan_undang_undang">Kajian dan Evaluasi Pemantauan Pelaksanaan Undang-Undang</string>
+    <string name="rekapitulasi_peraturan_pelaksanaan_undang_undang">Rekapitulasi Peraturan Pelaksanaan Undang-Undang</string>
+    <string name="rekapitulasi_uu_berdasarkan_tahun">Rekapitulasi UU Berdasarkan Tahun</string>
+    <string name="rekapitulasi_uu_dan_perlak_pada_komisi_komisi_dan_badan_anggaran_dpr_ri">Rekapitulasi UU dan Perlak Pada Komisi-komisi dan Badan Anggaran DPR RI</string>
+    <string name="topik_informasi">Topik Informasi</string>
+    <string name="politik_dan_keamanan">Politik dan Keamanan</string>
+    <string name="industri_dan_pembangunan">Industri dan Pembangunan</string>
+    <string name="jurnal_prodigy">Jurnal Prodigy</string>
+    <string name="kesejahteraan_rakyat">Kesejahteraan Rakyat</string>
+    <string name="ekonomi_dan_keuangan">Ekonomi dan Keuangan</string>
 
     <string-array name="nama_kategori">
         <item>Kesejahteraan Rakyat</item>
@@ -99,6 +121,49 @@
         <item>@drawable/img6</item>
         <item>@drawable/img7</item>
     </array>
+
+    <string-array name="id_publikasi">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="nama_publikasi">
+        <item>Rekapitulasi Peraturan Pelaksanaan Undang-Undang Gabungan</item>
+        <item>Rekapitulasi Peraturan Pelaksanaan UU Komisi II</item>
+        <item>Tinjauan Kritis Produksi Padi Nasional</item>
+        <item>Optimalisasi Penerapan pajak Pertambahan Nilai (PPN)</item>
+        <item>Analisis Dan Evaluasi Pemantauan Pelaksanaan UU Nomor 18 Tahun 2013</item>
+        <item>Rekapitulasi Peraturan Pelaksanaan Undang-Undang Gabungan</item>
+    </string-array>
+    <string-array name="lokasi_publikasi">
+        <item>PUSAT PEMANTAUAN PELAKSANAAN UNDANG-UNDANG</item>
+        <item>PUSAT PEMANTAUAN PELAKSANAAN UNDANG-UNDANG</item>
+        <item>PUSAT KAJIAN ANGGARAN </item>
+        <item>PUSAT KAJIAN ANGGARAN</item>
+        <item>PUSAT PEMANTAUAN PELAKSANAAN UNDANG-UNDANG</item>
+        <item>PUSAT PEMANTAUAN PELAKSANAAN UNDANG-UNDANG</item>
+    </string-array>
+
+    <string-array name="tipe_publikasi">
+        <item>DATA</item>
+        <item>DATA</item>
+        <item>TEKS</item>
+        <item>DATA</item>
+        <item>TEKS</item>
+        <item>DATA</item>
+    </string-array>
+
+    <string-array name="tahun_publikasi">
+        <item>2018</item>
+        <item>2016</item>
+        <item>2020</item>
+        <item>2020</item>
+        <item>2012</item>
+        <item>2015</item>
+    </string-array>
 
     <string-array name="item_title_notifikasi">
         <item>Permintaan dataset sudah diterima</item>

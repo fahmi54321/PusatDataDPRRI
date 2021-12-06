@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PusatDataDPRRI">
         <activity
+            android:name=".ui.splashcreen.SplashScreen2Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
-            android:label="@string/title_activity_main2"></activity>
+            android:label="@string/title_activity_main2" />
         <activity android:name=".SignActivity" />
-        <activity android:name=".ui.splashcreen.SplashScreenActivity" >
+        <activity android:name=".ui.splashcreen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +26,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PusatDataDPRRI.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.PusatDataDPRRI.NoActionBar"></activity>
     </application>
 
 </manifest>

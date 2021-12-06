@@ -10,6 +10,8 @@
 
     <color name="warnaKulit1">#BC927E</color>
     <color name="warnaKulit2">#9B8275</color>
+    <color name="warnaKulit3">#523737</color>
+    <color name="warnaKulit4">#F4E9E0</color>
 
     <color name="dot">#1de9b6</color>
     <color name="date_true">#2c2e31</color>
