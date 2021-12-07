@@ -1,60 +1,138 @@
 package com.android.pusatdatadprri.ui.menu
 
 import android.os.Bundle
+import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.android.pusatdatadprri.R
+import com.android.pusatdatadprri.databinding.FragmentDataSetBinding
+import com.jakewharton.rxbinding2.widget.RxTextView
+import io.reactivex.Observable
+import io.reactivex.functions.Function5
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [DataSetFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class DataSetFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    //nama,nohp,email,judul,deskripsi
+
+    lateinit var binding : FragmentDataSetBinding
+    lateinit var namaStream : Observable<Boolean>
+    lateinit var noHpStream : Observable<Boolean>
+    lateinit var emailStream : Observable<Boolean>
+    lateinit var judulStream : Observable<Boolean>
+    lateinit var deskripsiStream : Observable<Boolean>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_data_set, container, false)
+        // Inflate the layout for this fragment'
+        binding = FragmentDataSetBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment DataSetFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            DataSetFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        dataStreamInput()
+        implementasiDataStream()
+    }
+
+    private fun dataStreamInput(){
+        namaStream = RxTextView.textChanges(binding.edtNama)
+            .skipInitialValue()
+            .map {
+                it.isNullOrEmpty()
             }
+
+        namaStream.subscribe {
+            showNamaAlert(it)
+        }
+
+        noHpStream = RxTextView.textChanges(binding.edtNoTelp)
+            .skipInitialValue()
+            .map {
+                it.isNullOrEmpty()
+            }
+
+        noHpStream.subscribe {
+            showNoHpAlert(it)
+        }
+
+        emailStream = RxTextView.textChanges(binding.edtEmail)
+            .skipInitialValue()
+            .map {
+                !Patterns.EMAIL_ADDRESS.matcher(it).matches() || it.isNullOrEmpty()
+            }
+
+        emailStream.subscribe {
+            showEmailAlert(it)
+        }
+
+        judulStream = RxTextView.textChanges(binding.edtJudul)
+            .skipInitialValue()
+            .map {
+                it.isNullOrEmpty()
+            }
+
+        judulStream.subscribe {
+            showJudulAlert(it)
+        }
+
+        deskripsiStream = RxTextView.textChanges(binding.edtDeskripsi)
+            .skipInitialValue()
+            .map {
+                it.isNullOrEmpty()
+            }
+
+        deskripsiStream.subscribe {
+            showDeskripsiAlert(it)
+        }
+    }
+
+    private fun implementasiDataStream(){
+        val invalidDataStream = Observable.combineLatest(
+            namaStream,
+            noHpStream,
+            emailStream,
+            judulStream,
+            deskripsiStream,
+            Function5 { namaInvalid: Boolean,
+                        noHpInvalid: Boolean,
+                        emailInvalid: Boolean,
+                        judulInvalid: Boolean,
+                        deskripsiInvalid: Boolean ->
+                !namaInvalid && !noHpInvalid && !emailInvalid && !judulInvalid && !deskripsiInvalid
+            }
+        )
+
+        invalidDataStream.subscribe({
+            if (it){
+                binding.btnKirim.isEnabled = true
+            }else{
+                binding.btnKirim.isEnabled = false
+            }
+        })
+    }
+
+    private fun showDeskripsiAlert(it: Boolean) {
+        binding.edtDeskripsi.error = if (it) "Deskripsi kosong" else null
+    }
+
+    private fun showEmailAlert(it: Boolean) {
+        binding.edtEmail.error = if (it) "Email kosong atau tidak benar" else null
+    }
+
+    private fun showJudulAlert(it: Boolean) {
+        binding.edtJudul.error = if (it) "Judul kosong" else null
+    }
+
+    private fun showNamaAlert(it: Boolean) {
+        binding.edtNama.error = if (it) "Nama kosong" else null
+    }
+
+    private fun showNoHpAlert(it: Boolean) {
+        binding.edtNoTelp.error = if (it) "No Telp kosong" else null
     }
 }

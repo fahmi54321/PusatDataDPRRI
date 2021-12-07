@@ -16,9 +16,6 @@
                 android:id="@+id/nav_publikasi"
                 android:title="@string/menu_publikasi" />
             <item
-                android:id="@+id/nav_topik"
-                android:title="@string/menu_topik" />
-            <item
                 android:id="@+id/nav_infografis"
                 android:title="@string/menu_infografis" />
             <item

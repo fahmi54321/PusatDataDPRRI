@@ -69,12 +69,48 @@
     <string name="jurnal_prodigy">Jurnal Prodigy</string>
     <string name="kesejahteraan_rakyat">Kesejahteraan Rakyat</string>
     <string name="ekonomi_dan_keuangan">Ekonomi dan Keuangan</string>
+    <string name="form_request_dataset">FORM REQUEST DATASET</string>
+    <string name="identitas">Identitas</string>
+    <string name="masukkan_nama_anda">Masukkan nama anda</string>
+    <string name="nama">Nama</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="email">Email</string>
+    <string name="masukkan_email">Masukkan email</string>
+    <string name="informasi_pekerjaan">Informasi Pekerjaan</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="informasi_kebutuhan_dataset">Informasi kebutuhan Dataset</string>
+    <string name="judul_dataset_yang_dimohon">Judul dataset yang dimohon</string>
+    <string name="masukkan_judul">Masukkan judul</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="tujuan_penggunaan_dataset">Tujuan penggunaan dataset</string>
+    <string name="masukkan_no_telp">Masukkan no telp</string>
+    <string name="kirim">Kirim</string>
+    <string name="remember_me">Remember me</string>
 
     <string-array name="nama_kategori">
         <item>Kesejahteraan Rakyat</item>
         <item>Politik dan Keamanan</item>
         <item>Industri dan Pembangunan</item>
         <item>Ekonomi dan Keuangan</item>
+    </string-array>
+
+    <string-array name="pekerjaan">
+        <item>-Pilih Pekerjaan-</item>
+        <item>Pelajar/Mahasiswa/Akademisi</item>
+        <item>Profesional</item>
+        <item>Wirausaha</item>
+        <item>Pemerintahan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="tujuan">
+        <item>-Pilih Tujuan-</item>
+        <item>Referensi Kajian Bisnis</item>
+        <item>Referensi Pembuatan Kebijakan</item>
+        <item>Referensi Pembuatan Kurikulum/Bahan Ajar</item>
+        <item>Referensi Tugas/Karya Ilmiah</item>
+        <item>Referensi Pribadi</item>
+        <item>Lainnya</item>
     </string-array>
 
     <array name="gambar_kategori">

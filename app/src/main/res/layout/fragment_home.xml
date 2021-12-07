@@ -1,504 +1,518 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="0dp"
-            android:layout_height="82dp"
-            android:layout_margin="15dp"
-            android:background="@drawable/bg"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_weight="1"
-                android:src="@drawable/logo_dpr_ri" />
-
-            <TextView
-                android:id="@+id/textView5"
-                style="@style/TextView.robotoBoldBlack_14sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="@string/selamat_datang_di_pusat_data_dpr_ri"
-                android:textAlignment="center" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_weight="1"
-                android:src="@drawable/setjen_dpr_ri" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="0dp"
-            android:layout_height="222dp"
-            android:background="@drawable/search"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-            <TextView
-                android:id="@+id/textView6"
-                style="@style/TextView.robotoMediumBlack_11sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pusat_data_dpr_ri" />
-
-            <TextView
-                android:id="@+id/textView7"
-                style="@style/TextView.robotoMediumBlack_11sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/data_mutakhir_dan_terintegrasi_parlemen" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName3"
-                style="@style/EditText.key"
-                android:layout_width="208dp"
-                android:layout_height="44dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/bg_edt_search"
-                android:inputType="textPersonName"
-                android:hint="@string/cari_kata_kunci" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="0dp"
-            android:layout_height="82dp"
-            android:layout_margin="15dp"
-            android:background="@drawable/bg"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-            <ImageView
-                android:layout_width="180dp"
-                android:layout_height="80dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/topik" />
-        </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvKategori"
-            android:layout_width="0dp"
-            android:layout_height="82dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="0dp"
-            android:layout_height="82dp"
-            android:layout_margin="15dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rvKategori">
-
-            <ImageView
-                android:layout_width="180dp"
-                android:layout_height="80dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/infografis" />
-        </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvNews"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout4"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="82dp"
-            android:layout_margin="15dp"
-            android:background="@drawable/bg"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rvNews">
+            android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="180dp"
-                android:layout_height="80dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/agenda" />
-        </LinearLayout>
 
-        <TextView
-            android:id="@+id/txtKalender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/warnaKulit1"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginStart="16dp"
-            android:text="Kalender"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></TextView>
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:id="@+id/itemKalender"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtKalender">
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg"
+                android:gravity="center"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_edt_search"
-                    android:padding="4dp"
-                    android:orientation="vertical">
+                    android:src="@drawable/logo_dpr_ri" />
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:src="@drawable/ic_arrow_forward"
-                            android:layout_alignParentRight="true"></ImageView>
-                        <LinearLayout
-                            android:layout_centerHorizontal="true"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:id="@+id/month"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="#000"
-                                android:padding="4dp"
-                                android:textSize="12sp" />
-                            <TextView
-                                android:id="@+id/year"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="#000"
-                                android:padding="4dp"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:src="@drawable/ic_arrow_back"
-                            android:layout_alignParentLeft="true"></ImageView>
-                    </RelativeLayout>
-
-                    <LinearLayout
-                        android:id="@+id/ll_day"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:gravity="center_horizontal"
-                        android:orientation="horizontal"
-                        android:paddingBottom="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/month">
-
-                        <TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="MIN"
-                            android:textColor="#aaaeb3"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="SEN"
-                            android:textColor="#aaaeb3"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="SEL"
-                            android:textColor="#aaaeb3"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView12"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="RAB"
-                            android:textColor="#aaaeb3"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView13"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="KAM"
-                            android:textColor="#aaaeb3"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView14"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="JUM"
-                            android:textColor="#aaaeb3"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView15"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="SAB"
-                            android:textColor="#aaaeb3"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recyclerView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:numColumns="7"
-                        android:orientation="horizontal"
-                        android:paddingBottom="8dp"
-                        app:layoutManager="com.google.android.flexbox.FlexboxLayoutManager"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/ll_day"
-                        tools:itemCount="7"
-                        tools:listitem="@layout/item_date" />
-                    <LinearLayout
-                        android:id="@+id/ll_day1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:gravity="center_horizontal"
-                        android:orientation="horizontal"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/month">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="Sidang"
-                            android:drawableStart="@drawable/bg_circle_green"
-                            android:drawablePadding="4dp"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="Proses"
-                            android:drawableStart="@drawable/bg_circle_green"
-                            android:drawablePadding="4dp"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="Agenda"
-                            android:drawableStart="@drawable/bg_circle_green"
-                            android:drawablePadding="4dp"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_horizontal"
-                            android:text="Libur"
-                            android:drawableStart="@drawable/bg_circle_green"
-                            android:drawablePadding="4dp"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="normal" />
-
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/TextView.robotoBoldBlack_14sp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/selamat_datang_di_pusat_data_dpr_ri"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/setjen_dpr_ri" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="222dp"
+                android:background="@drawable/search"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/TextView.robotoMediumBlack_11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pusat_data_dpr_ri" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/TextView.robotoMediumBlack_11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/data_mutakhir_dan_terintegrasi_parlemen" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    style="@style/EditText.key"
+                    android:layout_width="208dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="20dp"
                     android:background="@drawable/bg_edt_search"
-                    android:gravity="center"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginLeft="16dp">
+                    android:inputType="textPersonName"
+                    android:hint="@string/cari_kata_kunci" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/topik" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvKategori"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_margin="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvKategori">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/infografis" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvNews">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/agenda" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtKalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/warnaKulit1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:text="Kalender"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:id="@+id/itemKalender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKalender">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-                        <TextView
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edt_search"
+                        android:padding="4dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_arrow_forward"
+                                android:layout_alignParentRight="true"></ImageView>
+                            <LinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000"
+                                    android:padding="4dp"
+                                    android:textSize="12sp" />
+                                <TextView
+                                    android:id="@+id/year"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000"
+                                    android:padding="4dp"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_arrow_back"
+                                android:layout_alignParentLeft="true"></ImageView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_day"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Hari ini"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:padding="16dp"
-                            android:background="@color/white"></TextView>
-                        <TextView
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/month">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="MIN"
+                                android:textColor="#aaaeb3"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="SEN"
+                                android:textColor="#aaaeb3"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="SEL"
+                                android:textColor="#aaaeb3"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="RAB"
+                                android:textColor="#aaaeb3"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="KAM"
+                                android:textColor="#aaaeb3"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="JUM"
+                                android:textColor="#aaaeb3"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="SAB"
+                                android:textColor="#aaaeb3"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Akan datang"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:padding="16dp"
-                            android:gravity="center"
-                            android:background="#D3CFCF"></TextView>
+                            android:numColumns="7"
+                            android:orientation="horizontal"
+                            android:paddingBottom="8dp"
+                            app:layoutManager="com.google.android.flexbox.FlexboxLayoutManager"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ll_day"
+                            tools:itemCount="7"
+                            tools:listitem="@layout/item_date" />
+                        <LinearLayout
+                            android:id="@+id/ll_day1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/month">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Sidang"
+                                android:drawableStart="@drawable/bg_circle_green"
+                                android:drawablePadding="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Proses"
+                                android:drawableStart="@drawable/bg_circle_green"
+                                android:drawablePadding="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Agenda"
+                                android:drawableStart="@drawable/bg_circle_green"
+                                android:drawablePadding="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Libur"
+                                android:drawableStart="@drawable/bg_circle_green"
+                                android:drawablePadding="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="16dp"
-                        android:background="#8E8787"
-                        android:weightSum="3">
-                        <TextView
+                        android:layout_weight="2"
+                        android:background="@drawable/bg_edt_search"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginLeft="16dp">
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:text="10.00"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:padding="8dp"
-                            android:textColor="@color/white"
-                            android:background="@drawable/bg_oval_warna_kulit"></TextView>
-                        <TextView
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Hari ini"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:background="@color/white"></TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Akan datang"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:padding="16dp"
+                                android:gravity="center"
+                                android:background="#D3CFCF"></TextView>
+                        </LinearLayout>
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Sidang"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:textColor="@color/white"></TextView>
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:background="#8E8787"
+                            android:weightSum="3">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="10.00"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/bg_oval_warna_kulit"></TextView>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Sidang"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textColor="@color/white"></TextView>
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="0dp"
+                android:layout_height="82dp"
+                android:layout_margin="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemKalender">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/statisktik" />
             </LinearLayout>
-        </HorizontalScrollView>
 
-        <LinearLayout
-            android:id="@+id/linearLayout5"
-            android:layout_width="0dp"
-            android:layout_height="82dp"
-            android:layout_margin="15dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/itemKalender">
-
-            <ImageView
-                android:layout_width="180dp"
-                android:layout_height="80dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/statisktik" />
-        </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvStatistik"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStatistik"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/help"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="32dp"></ImageView>
+
+
+</RelativeLayout>
