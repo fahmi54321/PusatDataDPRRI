@@ -1,15 +1,12 @@
 package com.android.pusatdatadprri.ui.home
 
-import android.content.Intent
 import android.content.res.TypedArray
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.pusatdatadprri.R
@@ -224,6 +221,10 @@ class HomeFragment : Fragment() {
         binding.year.setOnClickListener {
             showMonthYearPicker()
         }
+
+        binding.lnTopik.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_nav_home_to_topikFragment)
+        )
     }
 
     private fun showMonthYearPicker(){

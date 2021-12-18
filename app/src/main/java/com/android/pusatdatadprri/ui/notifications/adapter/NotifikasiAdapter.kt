@@ -3,11 +3,8 @@ package com.android.pusatdatadprri.ui.notifications.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.android.pusatdatadprri.databinding.ItemKategoriBinding
 import com.android.pusatdatadprri.databinding.ItemNotifikasiBinding
-import com.android.pusatdatadprri.model.kategori.KategoriModel
 import com.android.pusatdatadprri.ui.notifications.model.NotifikasiModel
-import com.bumptech.glide.Glide
 
 class NotifikasiAdapter(
     var data:List<NotifikasiModel>,

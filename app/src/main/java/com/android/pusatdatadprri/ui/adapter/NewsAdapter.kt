@@ -3,9 +3,7 @@ package com.android.pusatdatadprri.ui.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.android.pusatdatadprri.databinding.ItemKategoriBinding
 import com.android.pusatdatadprri.databinding.ItemNewsBinding
-import com.android.pusatdatadprri.model.kategori.KategoriModel
 import com.android.pusatdatadprri.model.news.NewsModel
 import com.bumptech.glide.Glide
 

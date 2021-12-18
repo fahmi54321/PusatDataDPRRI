@@ -86,6 +86,15 @@
     <string name="masukkan_no_telp">Masukkan no telp</string>
     <string name="kirim">Kirim</string>
     <string name="remember_me">Remember me</string>
+    <string name="judul_topik">Konsep Awal RUU (RUU tentang Perubahan atas Undang-Undang Nomor 5 Tahun 1999 tentang Larangan Praktik Monopoli dan Persaingan Usaha Tidak Sehat</string>
+    <string name="lihat_data">Lihat Data</string>
+    <string name="rancangan_undang_undang_tentang">Rancangan Undang Undang tentang Larangan Praktik Monopoli dan Praktik Persaingan Usaha Tidak Sehat merupakan penyempurnaan terhadap Undang Undang Nomor 5 Tahun 1999. Sebagai penyempurnaan terhadap Undang-Undang sebelumnya, terdapat materi muatan baru, antara lain: perluasan pengertian Pelaku Uaha agar penegakan hukum dapat menjangkau Pelaku Usaha yang berdomisill hukum di luar wilayah Indonesia yang perilakunya mempunyai dampak bagi pasar dan perekonomian Indonesia; perubahan tentang pengaturan pemberitahuan penggabungan atau peleburan badan usaha, saham, menjadi dilakukan pada saat rencana penggabungan atau peleburan badan usaha, pengambilalihan aset, pengembilalihan saham, atau pembentukan usaha patungan tersebut terjadi; pengaturan yang lebih komprehensif mengenai mekanisme dan tata cara penyelesaian erkara persaingan usaha; penegasan kedudukan KPPU sebagai lembaga negara yang berimplikasi pada pelaksanaan fungsi, tugas dan wewenangnya; perubahan denda sanksi administratif yang semula menggunakan nilai nominal menjadi persentase terhadap nilai penjualan dan/atau nilai transaksi.</string>
+    <string name="unduh_data">Unduh data</string>
+    <string name="unduh_dataset">Unduh Dataset</string>
+    <string name="unduh_visualisasi">Unduh Visualisasi</string>
+    <string name="dpr_ri_periode_2019_2024">DPR RI periode 2019-2024 telah mengajukan Rancangan Undang-Undang (RUU) tentang Perubahan Atas Undang-Undang Nomor 5 Tahun 2014 tentang Aparatus Sipil Negara. RUU Perubahan Atas ASN telah ditetapkan menjadi prioritas program legislasi nasional.</string>
+    <string name="penulis">Penulis</string>
+    <string name="elsa_puspitasari">Elsa Puspitasari</string>
 
     <string-array name="nama_kategori">
         <item>Kesejahteraan Rakyat</item>
@@ -200,6 +209,39 @@
         <item>2012</item>
         <item>2015</item>
     </string-array>
+
+    <string-array name="id_visualiasi">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="txt_visualiasi">
+        <item>Perdagangan Internasional</item>
+        <item>Analisis Pasar Modal Indonesia</item>
+        <item>Evaluasi RPJMN 2015-2019</item>
+        <item>Analisis APBN Indonesia</item>
+    </string-array>
+    <array name="gambar_visualisasi">
+        <item>@drawable/vis1</item>
+        <item>@drawable/vis2</item>
+        <item>@drawable/vis3</item>
+        <item>@drawable/vis4</item>
+    </array>
+
+    <string-array name="name_infografis">
+        <item>Hak Ulayat Dalam Reformasi Agraria</item>
+        <item>Perspektif Hukum, Sosial, dan Ekonomi </item>
+        <item>Analisis Dampak Terhadap Revisi Undang-Undang Nomor 5 Tahun 2014</item>
+        <item>Kebijakan Pupuk Bersubsidi</item>
+    </string-array>
+    <array name="gambar_infografis">
+        <item>@drawable/news1</item>
+        <item>@drawable/news2</item>
+        <item>@drawable/news3</item>
+        <item>@drawable/news4</item>
+    </array>
 
     <string-array name="item_title_notifikasi">
         <item>Permintaan dataset sudah diterima</item>

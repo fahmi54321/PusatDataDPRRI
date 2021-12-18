@@ -9,7 +9,11 @@
         android:id="@+id/nav_home"
         android:name="com.android.pusatdatadprri.ui.home.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_topikFragment"
+            app:destination="@id/topikFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_publikasi"
@@ -90,4 +94,9 @@
         android:name="com.android.pusatdatadprri.ui.notifications.view.NotifikasiContentFragment"
         android:label="Notifikasi"
         tools:layout="@layout/fragment_notifikasi_content" />
+    <fragment
+        android:id="@+id/topikFragment"
+        android:name="com.android.pusatdatadprri.ui.topik.TopikFragment"
+        android:label="fragment_topik"
+        tools:layout="@layout/fragment_topik" />
 </navigation>

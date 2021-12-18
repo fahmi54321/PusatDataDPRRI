@@ -1,6 +1,5 @@
 package com.android.pusatdatadprri.ui.menu
 
-import android.content.res.TypedArray
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +8,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.pusatdatadprri.R
 import com.android.pusatdatadprri.databinding.FragmentPublikasiBinding
-import com.android.pusatdatadprri.model.kategori.KategoriModel
 import com.android.pusatdatadprri.model.publikasi.PublikasiModel
 import com.android.pusatdatadprri.ui.adapter.KategoriAdapter
 import com.android.pusatdatadprri.ui.adapter.PublikasiAdapter

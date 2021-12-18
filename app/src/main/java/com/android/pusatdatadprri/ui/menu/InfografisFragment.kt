@@ -1,5 +1,6 @@
 package com.android.pusatdatadprri.ui.menu
 
+import android.content.Intent
 import android.content.res.TypedArray
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,18 +11,19 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.pusatdatadprri.R
 import com.android.pusatdatadprri.databinding.FragmentInfografisBinding
-import com.android.pusatdatadprri.model.news.NewsModel
-import com.android.pusatdatadprri.ui.adapter.NewsAdapter
+import com.android.pusatdatadprri.model.infografis.InfografisModel
+import com.android.pusatdatadprri.ui.adapter.InfografisAdapter
+import com.android.pusatdatadprri.ui.menu.filter.DetailsInfografisActivity
 
 class InfografisFragment : Fragment() {
 
-    //news
-    var adapterNews: NewsAdapter?=null
-    lateinit var gambarNews: TypedArray
-    lateinit var idNews:Array<String>
-    var news = arrayListOf<NewsModel>()
+    //infografis
+    var adapterInfografis: InfografisAdapter? = null
+    lateinit var gambarInfografis: TypedArray
+    lateinit var namaInfografis: Array<String>
+    var infografis = arrayListOf<InfografisModel>()
 
-    lateinit var binding : FragmentInfografisBinding
+    lateinit var binding: FragmentInfografisBinding
 
 
     override fun onCreateView(
@@ -29,7 +31,7 @@ class InfografisFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentInfografisBinding.inflate(inflater,container,false)
+        binding = FragmentInfografisBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -37,30 +39,39 @@ class InfografisFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         isiDataNews()
-        bindDataNews()
+        bindDataInfografis()
     }
 
     private fun isiDataNews() {
-        gambarNews = resources.obtainTypedArray(R.array.gambar_news)
-        idNews = resources.getStringArray(R.array.id_news)
-        for (position in idNews.indices){
-            val data = NewsModel(
-                gambarNews.getResourceId(position,-1)
+        gambarInfografis = resources.obtainTypedArray(R.array.gambar_infografis)
+        namaInfografis = resources.getStringArray(R.array.name_infografis)
+        for (position in namaInfografis.indices) {
+            val data = InfografisModel(
+                gambarInfografis.getResourceId(position, -1),
+                namaInfografis[position]
             )
-            news.add(data)
+            infografis.add(data)
         }
-        adapterNews?.data = news
+        adapterInfografis?.data = infografis
     }
 
-    private fun bindDataNews() {
-        adapterNews = NewsAdapter(news)
+    private fun bindDataInfografis() {
+        adapterInfografis =
+            InfografisAdapter(infografis, object : InfografisAdapter.onClickListener {
+                override fun detail(item: InfografisModel) {
+                    val intent = Intent(context, DetailsInfografisActivity::class.java)
+                    intent.putExtra("item", item)
+                    startActivity(intent)
+                }
+
+            })
 
         var gridLayoutManager: GridLayoutManager? = null
         gridLayoutManager = GridLayoutManager(context, 2, LinearLayoutManager.VERTICAL, false)
 
         binding.rvNews.apply {
             layoutManager = gridLayoutManager
-            adapter = adapterNews
+            adapter = adapterInfografis
         }
     }
 }

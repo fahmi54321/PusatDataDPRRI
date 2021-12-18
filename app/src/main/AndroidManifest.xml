@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PusatDataDPRRI">
         <activity
+            android:name=".ui.menu.filter.DetailsInfografisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.menu.DetailVisualisasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.topik.TopikDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.splashcreen.SplashScreen2Activity"
             android:exported="false" />
         <activity
@@ -26,7 +35,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PusatDataDPRRI.NoActionBar"></activity>
+            android:theme="@style/Theme.PusatDataDPRRI.NoActionBar" />
     </application>
 
 </manifest>
