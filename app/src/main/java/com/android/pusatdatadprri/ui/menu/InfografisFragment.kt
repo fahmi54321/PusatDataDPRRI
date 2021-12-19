@@ -53,6 +53,7 @@ class InfografisFragment : Fragment() {
             infografis.add(data)
         }
         adapterInfografis?.data = infografis
+        //
     }
 
     private fun bindDataInfografis() {
